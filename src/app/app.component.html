@@ -1,5 +1,5 @@
 <div class="mainPlate" fxLayout="column" fxLayout.gt-sm="row">
-  <div class="currencyPlate left" fxLayout="column" fxLayoutAlign="center center">
+  <div class="currencyPlate left {{leftCurrency}}" fxLayout="column" fxLayoutAlign="center center">
     <app-currency-choose (onChangeFunction)="unitChanged($event)" [(value)]="leftCurrency"></app-currency-choose>
     <mat-form-field appearance="outline" class="inputBox">
       <mat-label>Amount</mat-label>
@@ -9,7 +9,7 @@
     <p class="resultBox" *ngIf="resultMode && leftNormalizedValue && leftAmount > 0">{{leftNormalizedValue}} <span
         class="unit">{{leftCurrency}}</span></p>
   </div>
-  <div class="currencyPlate right" fxLayout="column" fxLayoutAlign="center center">
+  <div class="currencyPlate right {{rightCurrency}}" fxLayout="column" fxLayoutAlign="center center">
     <app-currency-choose (onChangeFunction)="unitChanged($event)" [(value)]="rightCurrency">
     </app-currency-choose>
     <mat-form-field appearance="outline" class="inputBox">
