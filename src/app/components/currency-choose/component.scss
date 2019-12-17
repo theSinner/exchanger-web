@@ -1,0 +1,13 @@
+@import '../../../stylesVariables.scss';
+
+.currencyBox
+{
+    .currency
+    {
+        color: $liteTextColor;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        margin-top: 0px;
+        cursor: pointer;
+    }
+}

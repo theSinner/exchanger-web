@@ -1,0 +1,86 @@
+@import '../stylesVariables.scss';
+
+.mainPlate
+{
+    #logo
+    {
+        height: 5rem;
+        display: block;
+        position: fixed;
+        top: 0.9rem;
+        left: 1.5rem;
+    }
+    .resultBox
+    {
+        font-size: 2rem;
+        margin-top: 0px;
+        margin-bottom: 0rem;
+        margin-top: -2.6rem;
+        color: $liteTextColor;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .unit
+        {
+            font-size: 1.3rem;
+        }
+    }
+    width: 100vw;
+    height: 100vh;
+    .currencyPlate
+    {
+        padding: 3rem;
+        height: 100vh;        
+        .inputBox
+        {
+            margin-bottom: 2rem;
+            width: 70%;
+            ::ng-deep .mat-form-field-outline {
+                color: $liteTextColor !important;
+            }
+            ::ng-deep input.mat-input-element {
+                color: $liteTextColor !important;
+                font-size: 2rem;
+            }
+            ::ng-deep .mat-form-field-infix
+            {
+                padding: 0.5em 0 !important;
+            }
+            ::ng-deep mat-label
+            {
+                color: $liteTextColor;
+            }
+        }
+        &.left
+        {
+            flex: 1 1 auto;
+            background-color: $primaryColor;
+        }
+        &.right
+        {
+            flex: 1 1 auto;
+            background-color: $accentColor;
+        }
+        input
+        {
+            color: $liteTextColor;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 40.0625em) {
+    .currencyPlate
+    {
+        padding: 1rem 2rem !important;
+    }
+    #logo
+    {
+        height: 3rem !important;
+        display: block !important;
+        position: fixed !important;
+        top: 0.4rem !important;
+        left: 0.8rem !important;
+    }
+}
+  
