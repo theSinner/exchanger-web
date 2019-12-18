@@ -11,3 +11,12 @@
         cursor: pointer;
     }
 }
+
+.currencyItem
+{
+    span.selected
+    {
+        font-weight: bold;
+        color: $accentColor;
+    }
+}

@@ -1,6 +1,6 @@
 <mat-menu #leftMenu="matMenu">
-    <button mat-menu-item *ngFor="let currency of currencies;" (click)="chooseItem(currency)">
-        <span>{{currency}}</span>
+    <button class="currencyItem" mat-menu-item *ngFor="let currency of currencies;" (click)="chooseItem(currency)">
+        <span [ngClass]="{'selected': currency == value}">{{currency}}</span>
     </button>
 </mat-menu>
 <div [matMenuTriggerFor]="leftMenu" class="currencyBox" fxLayout="row" fxLayoutAlign="flex-start center">

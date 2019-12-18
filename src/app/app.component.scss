@@ -30,7 +30,11 @@
     .currencyPlate
     {
         padding: 3rem;
-        height: 100vh;        
+        height: 100vh;
+        -webkit-transition: all 0.3s ease !important;
+           -moz-transition: all 0.3s ease !important;
+             -o-transition: all 0.3s ease !important;
+                transition: all 0.3s ease !important;  
         .inputBox
         {
             margin-bottom: 2rem;

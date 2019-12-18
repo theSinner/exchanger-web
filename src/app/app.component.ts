@@ -7,14 +7,14 @@ import { ExchangeResource } from './resources/exchange';
 })
 export class AppComponent {
   title = 'exchanger';
-  leftCurrency: string = 'EUR';
-  rightCurrency: string = 'USD';
-  leftAmount: number = 0;
-  rightAmount: number = 0;
+  leftCurrency = 'EUR';
+  rightCurrency = 'USD';
+  leftAmount = 0;
+  rightAmount = 0;
   rightNormalizedValue;
   leftNormalizedValue;
-  loadingMode: boolean = false;
-  resultMode: boolean = false;
+  loadingMode = false;
+  resultMode = false;
   timeout: any;
   constructor(
     private exchangeResource: ExchangeResource) {
@@ -53,7 +53,7 @@ export class AppComponent {
     this.rightNormalizedValue = undefined;
   }
 
-  unitChanged() {
+  unitChanged(evnt) {
     this.clearResults();
     this.calculateAmount(this.leftAmount, 'left');
   }
